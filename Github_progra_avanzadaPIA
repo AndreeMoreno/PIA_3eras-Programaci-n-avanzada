@@ -1,0 +1,14 @@
+class TDevice:
+    def __init__(self, tamaño, peso, altura, marca):
+        self.tamaño = tamaño
+        self.peso = peso
+        self.altura = altura
+        self.marca = marca
+
+    def encender(self):
+        # Implementación del comportamiento de encender
+        pass
+
+    def apagar(self):
+        # Implementación del comportamiento de apagar
+        pass
