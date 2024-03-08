@@ -1,3 +1,5 @@
+a) Genere una clase en Python llamada TDevice (Dispositivo Electrónico) con los atributos de tamaño, peso, altura, marca y comportamiento encender, apagar.  
+
 class TDevice:
     def __init__(self, tamaño, peso, altura, marca):
         self.tamaño = tamaño
@@ -6,9 +8,216 @@ class TDevice:
         self.marca = marca
 
     def encender(self):
-        # Implementación del comportamiento de encender
+        # Comportamiento para encender el dispositivo
         pass
 
     def apagar(self):
-        # Implementación del comportamiento de apagar
+        # Comportamiento para apagar el dispositivo
         pass
+
+
+
+b) Genere 3 clases que desciendan de TDevice, por ejemplo una TV, Una Licuadora y Un Celular. Agregarle 3 métodos a cada nueva clase, es decir un comportamiento específico para cada nueva clase. 
+
+class TV(TDevice):
+    def __init__(self, tamaño, peso, altura, marca):
+        super().__init__(tamaño, peso, altura, marca)
+
+    def cambiar_canal(self, canal):
+        # Comportamiento para cambiar el canal de la TV
+        pass
+
+    def ajustar_volumen(self, volumen):
+        # Comportamiento para ajustar el volumen de la TV
+        pass
+
+    def reproducir_pelicula(self, pelicula):
+        # Comportamiento para reproducir una película en la TV
+        pass
+
+
+class Licuadora(TDevice):
+    def __init__(self, tamaño, peso, altura, marca):
+        super().__init__(tamaño, peso, altura, marca)
+
+    def mezclar(self, ingredientes):
+        # Comportamiento para mezclar ingredientes en la licuadora
+        pass
+
+    def cambiar_velocidad(self, velocidad):
+        # Comportamiento para cambiar la velocidad de la licuadora
+        pass
+
+    def limpiar(self):
+        # Comportamiento para limpiar la licuadora
+        pass
+
+
+class Celular(TDevice):
+    def __init__(self, tamaño, peso, altura, marca):
+        super().__init__(tamaño, peso, altura, marca)
+
+    def llamar(self, numero):
+        # Comportamiento para llamar a un número en el celular
+        pass
+
+    def enviar_mensaje(self, mensaje, destinatario):
+        # Comportamiento para enviar un mensaje a un destinatario en el celular
+        pass
+
+    def tomar_foto(self):
+        # Comportamiento para tomar una foto con el celular
+        pass
+
+
+
+c) Genere 2 instancias de cada una de las clases del punto 17 con diferentes valores en cada uno de los atributos y diferente comportamiento. 
+
+# Instancias de la clase TV
+tv1 = TV("50 pulgadas", "10 kg", "100 cm", "Samsung")
+tv2 = TV("32 pulgadas", "5 kg", "80 cm", "LG")
+
+# Instancias de la clase Licuadora
+licuadora1 = Licuadora("Grande", "2 kg", "40 cm", "Oster")
+licuadora2 = Licuadora("Pequeña", "1 kg", "30 cm", "Black & Decker")
+
+# Instancias de la clase Celular
+celular1 = Celular("5.5 pulgadas", "150 g", "15 cm", "iPhone")
+celular2 = Celular("6 pulgadas", "180 g", "16 cm", "Samsung")
+
+
+
+d) Genere una clase llamada TPersona con 5 atributos y 5 funciones.
+
+class TPersona:
+    def __init__(self, nombre, edad, genero, atributo1, atributo2):
+        self.nombre = nombre
+        self.edad = edad
+        self.genero = genero
+        self.atributo1 = atributo1
+        self.atributo2 = atributo2
+
+    def funcion1(self):
+        # Comportamiento de la función 1
+        pass
+
+    def funcion2(self):
+        # Comportamiento de la función 2
+        pass
+
+    def funcion3(self):
+        # Comportamiento de la función 3
+        pass
+
+    def funcion4(self):
+        # Comportamiento de la función 4
+        pass
+
+    def funcion5(self):
+        # Comportamiento de la función 5
+        pass
+
+
+
+
+e)  Genere 3 clases que desciendan de TPersona, (Por ejemplo un policía, un administrador y un bombero). 
+
+class Policia(TPersona):
+    def __init__(self, nombre, edad, genero, atributo1, atributo2):
+        super().__init__(nombre, edad, genero, atributo1, atributo2)
+
+    def funcion_especifica1(self):
+        # Comportamiento específico para la clase Policia
+        pass
+
+    def funcion_especifica2(self):
+        # Comportamiento específico para la clase Policia
+        pass
+
+
+class Administrador(TPersona):
+    def __init__(self, nombre, edad, genero, atributo1, atributo2):
+        super().__init__(nombre, edad, genero, atributo1, atributo2)
+
+    def funcion_especifica1(self):
+        # Comportamiento específico para la clase Administrador
+        pass
+
+    def funcion_especifica2(self):
+        # Comportamiento específico para la clase Administrador
+        pass
+
+
+class Bombero(TPersona):
+    def __init__(self, nombre, edad, genero, atributo1, atributo2):
+        super().__init__(nombre, edad, genero, atributo1, atributo2)
+
+    def funcion_especifica1(self):
+        # Comportamiento específico para la clase Bombero
+        pass
+
+    def funcion_especifica2(self):
+        # Comportamiento específico para la clase Bombero
+        pass
+
+
+
+f) Genere 1 clase que descienda de TPolicia, TAdministrador y TBombero. 
+
+class ClaseDescendiente(TPolicia, TAdministrador, TBombero):
+    def __init__(self, nombre, edad, genero, atributo1, atributo2):
+        super().__init__(nombre, edad, genero, atributo1, atributo2)
+
+    def funcion_especifica(self):
+        # Comportamiento específico para la clase descendiente
+        pass
+
+
+g) Instanciar 2 veces cada una de las clases del punto 21. 
+
+# Instancias de las clases del punto 21
+instancia1 = Policia("Juan", 30, "Masculino", "Atributo1", "Atributo2")
+instancia2 = Policia("María", 35, "Femenino", "Atributo1", "Atributo2")
+
+instancia3 = Administrador("Pedro", 40, "Masculino", "Atributo1", "Atributo2")
+instancia4 = Administrador("Ana", 45, "Femenino", "Atributo1", "Atributo2")
+
+instancia5 = Bombero("Carlos", 25, "Masculino", "Atributo1", "Atributo2")
+instancia6 = Bombero("Laura", 30, "Femenino", "Atributo1", "Atributo2")
+
+
+
+h) Define una clase llamada Persona que tenga los siguientes atributos: nombre, edad y genero. Además, la clase debe tener un método llamado presentarse que imprima un mensaje con el nombre y la edad de la persona. 
+
+class Persona:
+    def __init__(self, nombre, edad, genero):
+        self.nombre = nombre
+        self.edad = edad
+        self.genero = genero
+
+    def presentarse(self):
+        print(f"¡Hola! Mi nombre es {self.nombre} y tengo {self.edad} años.")
+
+
+i) Crea una subclase llamada Estudiante que herede de la clase Persona y tenga un atributo adicional llamado curso. Además, añade un método llamado estudiar que imprima un mensaje indicando el curso que está estudiando. 
+
+class Estudiante(Persona):
+    def __init__(self, nombre, edad, genero, curso):
+        super().__init__(nombre, edad, genero)
+        self.curso = curso
+
+    def estudiar(self):
+        print(f"Estoy estudiando el curso de {self.curso}.")
+
+j) Define una clase llamada Rectángulo que tenga dos atributos: largo y ancho. Además, añade un método llamado área que calcule y devuelva el área del rectángulo. 
+
+class Rectángulo:
+    def __init__(self, largo, ancho):
+        self.largo = largo
+        self.ancho = ancho
+
+    def área(self):
+        return self.largo * self.ancho
+
+
+
